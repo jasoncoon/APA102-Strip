@@ -6,9 +6,9 @@
 
 #define LED_PIN     1
 #define CLOCK_PIN   0
-#define COLOR_ORDER GBR
+#define COLOR_ORDER BGR
 #define CHIPSET     APA102
-#define NUM_LEDS    16
+#define NUM_LEDS    8
 
 uint8_t brightness = 8;
 
