@@ -30,10 +30,12 @@ void setup()
 
 void loop()
 {
-  rainbow();
+  hueCycle();
 
   FastLED.show(); // display this frame
   FastLED.delay(30);
+  
+  hue++;
 }
 
 // scale the brightness of the screenbuffer down
