@@ -8,9 +8,9 @@
 #define CLOCK_PIN   0
 #define COLOR_ORDER GBR
 #define CHIPSET     APA102
-#define NUM_LEDS    16
+#define NUM_LEDS    144
 
-uint8_t brightness = 8;
+uint8_t brightness = 255;
 
 CRGB leds[NUM_LEDS];
 
@@ -30,7 +30,7 @@ void setup()
 
 void loop()
 {
-  hueCycle();
+  sinelon();
 
   FastLED.show(); // display this frame
   FastLED.delay(30);
