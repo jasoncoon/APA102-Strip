@@ -30,7 +30,7 @@ void setup()
 
 void loop()
 {
-  hueCycle();
+  sinelon();
 
   FastLED.show(); // display this frame
   FastLED.delay(30);
