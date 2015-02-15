@@ -30,7 +30,7 @@ void setup()
 
 void loop()
 {
-  hueCycle();
+  sinelon();
 
   FastLED.show(); // display this frame
   FastLED.delay(30);
@@ -130,7 +130,7 @@ uint16_t sinelon()
 {
   // a colored dot sweeping back and forth, with fading trails
   fadeToBlackBy(leds, NUM_LEDS, 20);
-  int pos = beatsin16(13, 0, NUM_LEDS);
+  int pos = beatsin16(13, 0, NUM_LEDS - 1);
   leds[pos] += CHSV(hue, 255, 192);
   return 8;
 }
